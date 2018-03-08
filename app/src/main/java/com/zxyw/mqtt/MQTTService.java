@@ -23,8 +23,6 @@ import de.greenrobot.event.EventBus;
 /**
  * MQTT长连接服务
  *
- * @author 一口仨馍 联系方式 : yikousamo@gmail.com
- * @version 创建时间：2016/9/16 22:06
  */
 public class MQTTService extends Service {
 
