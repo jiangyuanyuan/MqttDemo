@@ -25,20 +25,78 @@ public class MainActivity extends AppCompatActivity {
         findViewById(R.id.publishBtn).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                MQTTService.publish("111111111111111111");
+                MQTTService.publish("1");
+            }
+        });
+
+        findViewById(R.id.publishBtn2).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                MQTTService.publish("2");
+            }
+        });
+
+        findViewById(R.id.publishBtn3).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                MQTTService.publish("3");
+            }
+        });
+
+        findViewById(R.id.publishBtn4).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                MQTTService.publish("4");
+            }
+        });
+
+        findViewById(R.id.publishBtn5).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                MQTTService.publish("前进");
+            }
+        });
+
+        findViewById(R.id.publishBtn6).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                MQTTService.publish("后退");
+            }
+        });
+
+        findViewById(R.id.publishBtn7).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                MQTTService.publish("左转");
+            }
+        });
+
+        findViewById(R.id.publishBtn8).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                MQTTService.publish("右转");
+            }
+        });
+
+        findViewById(R.id.publishBtn9).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                MQTTService.publish("0x1");
+            }
+        });
+
+        findViewById(R.id.publishBtn10).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                MQTTService.publish("a");
             }
         });
     }
-
-//    @Subscribe(threadMode = ThreadMode.MAIN)
-//    public void getMqttMessage(MQTTMessage mqttMessage){
-//        Log.i(MQTTService.TAG,"get message:"+mqttMessage.getMessage());
-//        Toast.makeText(this,mqttMessage.getMessage(),Toast.LENGTH_SHORT).show();
-//    }
 
     @Override
     protected void onDestroy() {
         EventBus.getDefault().unregister(this);
         super.onDestroy();
     }
+
 }

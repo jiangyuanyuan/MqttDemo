@@ -1,26 +1,70 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.zxyw.mqdemo.MainActivity">
-
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Hello World!"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
+    tools:context="com.zxyw.mqdemo.MainActivity"
+    android:orientation="vertical">
     <Button
         android:id="@+id/publishBtn"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="发送"
-        tools:layout_editor_absoluteX="154dp"
-        tools:layout_editor_absoluteY="231dp" />
+        android:text="1"
+        />
+    <Button
+        android:id="@+id/publishBtn2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="2"
+        />
+    <Button
+        android:id="@+id/publishBtn3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="3"
+        />
+    <Button
+        android:id="@+id/publishBtn4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="4"
+        />
+    <Button
+        android:id="@+id/publishBtn5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="前进"
+        />
+    <Button
+        android:id="@+id/publishBtn6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="后退"
+        />
+    <Button
+        android:id="@+id/publishBtn7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="左转"
+        />
+    <Button
+        android:id="@+id/publishBtn8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="右转"
+        />
+    <Button
+        android:id="@+id/publishBtn9"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="0x1"
+        />
+    <Button
+        android:id="@+id/publishBtn10"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="a"
+        />
 
-</android.support.constraint.ConstraintLayout>
+</LinearLayout>
